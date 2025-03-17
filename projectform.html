@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+<title>Booking form</title>
+</head>
+<body style="background-color:beige"></body>
+<h1 style="text-align:center">🚀 Let’s Make It Official!🚀</h1>
+<hr style="border:dotted">
+<marquee behaviour="alternate" direction="left">
+<h3 style="color:blue">Let's start booking</h3>
+</marquee>
+<form method="post" enctype="multipart/form-data">
+<label style="font-size:20px" for="Customer Head Name:">Name</label>
+<input type="text" name="name" id="name" required><br><br>
+<label style="font-size:20px" for="email">Mail id:<label>
+<input type="email" name="email" id="email" required><br><br>
+
+<label style="font-size:20px" for="gender" required>Gender:</label>
+<input type="radio" name="gender" value="male">
+<label style="font-size:20px" for="male">Male</label>
+<input type="radio" name="gender" value="female">
+<label style="font-size:20px"  for="female">Female</label><br><br>
+<label style="font-size:20px" for="phone">Contact number:</label>
+<input type="tel" name="phone" id="phone" required ><br><br>
+<label style="font-size:20px" for="type">Event type:</label>
+<select name="type" required>
+<option value=""> </label>
+<option value="Award ceremony">Award ceremony</option>
+<option value="Birthday party">Birthday party</option>
+<option value="Baby shower">Baby shower</option>
+<option value="Corporate Event">Corporate event</option>
+<option value="Engagement">Engagement</option>
+<option value="Marriage">Marraige</option>
+<option value="Music concert">Music concert</option>
+<option value="Sports event">Sports event</option>
+<option value="Product lauch">Product launch</option>
+<option value="Other">Other</option>
+</select><br><br>
+<label style="font-size:20px"  for="date">Event date(<label style="color:red">Booking should be done one or more months before</label>):
+<input type="date" name="date" id="date" min="2025-04-01" required>
+<br><br>
+<label style="font-size:20px" for="number">Number of guests(<label style="color:red">Minimum (30)</label>):
+<input type="number" name="guests" id="guests" min="30" required><br><br>
+<label style="font-size:20px" for="type">Additional requirements:</label>
+<select name="additional">
+<option value=""> </label>
+<option value="Food">Food</option>
+<option value="Music">Music</option>
+<option value="Photography">Photography</option>
+<option value="Event decoration">Event decoration</option>
+</select><br><br>
+<label style="font-size:20px" for="type">Venue(state):</label>
+<select name="venue" required>
+<option value=""> </label>
+<option value="Tamilnadu">Tamilnadu</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Telgana">Telgana</option>
+<option value="Delhi">Delhi</option>
+<option value="Kerla">Kerla</option>
+</select><br><br>
+<label style="font-size:20px" for="file">Upload your identity proof</label>
+<input type="file" id="file" name="file" required>
+<br><br>
+<hr style="border:dotted ;size:10px">
+<marquee behaviour="alternate" direction="right">
+<h3 style="color:blue">Let's procced to payment</h3></marquee>
+<label style="font-size:20px" for="payment">Payment method:</label>
+<select name="pay" required>
+<option value=""> </label>
+<option value="Card">Card</option>
+<option value="Paypal">Paypal</option>
+<option value="Bank transfer">Bank transfer</option>
+</select><br><br>
+<label style="font-size:20px" for="type"> Card Number:</label>
+<input type="password" name="card" id="pwd" required><br><br>
+<label style="font-size:20px" for="type"> Expiration date:</label>
+<input type="date" name="expi" id="d" required><br><br>
+<label style="font-size:20px" for="type"> Cvv:</label>
+<input type="password" name="cvv" id="pwd" required><br><br>
+<hr style="border:dotted ;size:10px">
+
+
+<fieldset>
+<legend>Terms and conditions</legend>
+<label>1️⃣ <b>Booking Confirmation</b>: All bookings are subject to availability and confirmed only after full payment.<br>
+
+2️⃣ <b>Payment Policy</b>: Payments must be made in advance using approved methods (Credit Card, PayPal, Bank Transfer).<br>
+3️⃣ <b>Cancellation & Refund:</b>
+
+Cancellations made 7 days before the event are eligible for a full refund.<br>
+Cancellations within 3 days will receive a 50% refund.<br>
+No refunds for cancellations made within 24 hours of the event.<br>
+4️⃣ <b>Rescheduling:</b> You can reschedule your event once, free of charge, if done at least 5 days in advance.<br>
+
+5️⃣ <b>Liability Disclaimer</b>: We are not responsible for third-party service failures, weather conditions, or unforeseen circumstances affecting your event.<br>
+
+6️⃣ <b>Damage & Conduct:</b> The event organizer is responsible for any damages caused to the venue during the event.<br>
+
+7️⃣ <b>Compliance with Laws</b>: All events must comply with local laws and regulations (e.g., noise levels, alcohol permits).<br>
+
+8️⃣ <b>Changes to Terms</b>: We reserve the right to update these terms at any time without prior notice<br><br>
+</fieldset>
+<hr style="border:dotted ;size:10px">
+<input type="checkbox" name="terms" required>
+<label style="font-size:20px" for="payment">I agree for all the terms and conditions:</label><br><br>
+
+<button type="submit">Book now</button>
+</form>
+</html>
+
+
+
+
+
+
