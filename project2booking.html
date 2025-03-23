@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Booking form</title>
+</head>
+<body style="background-color:lightblue">
+
+
+
+<h1 style="text-align:center">"Claim your spot—limited availability and earn your certification!"</h1><br><br>
+<form method="post" enctype="multipart/form-data" style="font-size:25px">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" required><br><br>
+<label for="age">Age:</label>
+<input type="number" name="no" id="no" required><br><br>
+<label for="Gender">Gender:</label>
+<label for="male">Male</label>
+
+<input type="radio" name="gender" value="male" required>
+<label for="female">Female</label>
+<input type="radio" name="gender" value="female" required><br><br>
+<label for="mail">Email id:</label>
+<input type="mail" name="email" id="email" required><br><br>
+<label for="group">Select your group:</label>
+<select name="group">
+<option value="">  </option>
+
+<option value="teacher">Teacher</option>
+
+<option value="student">Student</option>
+<option value="IT professional">IT professional</option>
+</select><br><br>
+<label for="month">Select the month:</label>
+<input type="month" name="mon" id="mon" min="2025-04" required><br><br>
+<label for="group">Select your Preferred time:</label>
+<select name="time">
+<option value="">  </option>
+
+<option value="mor">Morning</option>
+
+<option value="eve">Evening</option>
+<option value="after">Afternoon</option>
+</select><br><br>
+<label for="file" >If you have any project based ai upload here(optional):</label>
+<input type="file"name="file"><br><br>
+<button type="submit" onclick="alert('You are almost done .Click ok')">Book now</button>
+
+
+</body>
+</html>
+</form>
+</html>
+
+
+
+
+
+
