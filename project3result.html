@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+<title>Result</title>
+<link rel="icon" href= "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo.svg" type="image/x-icon">
+<link rel="stylesheet" href ="https://fonts.googleapis.com/css?family=Astro" >
+
+<h2 style="text-align:center;font-family:Exo">Your Submited Answers</h2><br><br>
+<style>
+body{display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background: linear-gradient(to bottom, #e0e0e0, #b0bec5, #90a4ae);
+}
+.countdown{font-size:100px;
+animation:fadeinout 1s backwards;
+color:yellow;
+
+}
+.countdown:nth-of-type(1) { animation-delay: 0s; } 
+.countdown:nth-of-type(2) { animation-delay: 1s; } 
+.countdown:nth-of-type(3) { animation-delay: 2s; }  
+.message{font-size:40px;
+animation:fadein 3s backwards;
+animation-delay:5s;
+
+}
+@keyframes fadeinout{0%{opacity:0};
+50%{opacity:1};
+100%{opacity:0};
+}
+@keyframes fadein{0%{opacity:0};
+100%{opacity:1};}
+p{font-size:20px;}
+
+</style>
+<p>Your Answer for question1:{{data.question1}}</p>
+<p>Your Answer for question2:{{data.question2}}</p>
+<p>Your Answer for question3:{{data.question3}}</p>
+<p>Your Answer for question4:{{data.question4}}</p>
+<p>Your Answer for question5:{{data.question5}}</p>
+<div class="countdown">3</div>
+<div class="countdown">2</div>
+<div class="countdown">1</div>
+<div class="message">Are you ready to view the marks
+
+<a href="/marks?question1={{ data.question1 }}&question2={{ data.question2 }}&question3={{ data.question3 }}&question4={{ data.question4 }}&question5={{ data.question5 }}">View Marks
+</a>
+</body>
+</html>

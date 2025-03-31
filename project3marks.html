@@ -1,0 +1,44 @@
+<html>
+
+
+<style>
+body{background: linear-gradient(to bottom, #e0e0e0, #b0bec5, #90a4ae);
+display:flex;justify-content:center;
+align-items:center;flex-direction:column;}
+.wheel-container{position:relative;width:500px;
+height:500px;
+}
+.wheel {border-radius:50%;position:absolute; width:500px;height:500px;background:conic-gradient(
+                #ffcc00 0deg 72deg, 
+                #ff6600 72deg 144deg, 
+                #ff0000 144deg 216deg, 
+                #00cc00 216deg 288deg, 
+                #0066ff 288deg 360deg);
+				transition:transform 0.3s ease;}
+#spin-toggle:checked ~ .wheel-container .wheel {
+    animation: spin 5s linear infinite;
+}
+@keyframes spin{0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}}
+#spin-toggle {display: none;
+}
+
+</style>
+<p style="text-align:center;font-size:50px;">"Tension? Never heard of it. Just spin!"</p>
+<label for="spin-toggle" style="cursor: pointer; padding: 10px; background: #ff6600; color: white; border-radius: 5px;">
+    Click to Spin!
+</label>
+<input type="checkbox" id="spin-toggle" ><br><br>
+<div class="wheel-container">
+       
+        <div class="wheel"></div>
+    </div>
+<p style="text-align:center;font-size:50px;">Total marks:{{tot_marks}}</p>
+<p style="text-align:center;font-size:50px;">Congratulations! visit us again</p>
+<p style="text-align:center;font-size:50px;">Do you want to re-attempt?
+<a href= "http://127.0.0.1:5000">Click here</a></p>
+<footer style="display:flex;justify-content:flex-start;width:100%;font-size:55px;padding:10px;background-color:gray">
+<p style="color:white">Contact:9841031623<br>
+Email:harinirajesh0519@gmail.com<br>
+Website:Nasasapce.com</p>
+</center>
