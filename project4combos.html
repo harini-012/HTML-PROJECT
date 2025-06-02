@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="icon" size="64X64" type="image/x-icon" href="https://cdn.textstudio.com/output/sample/normal/2/2/6/6/hp-logo-182-16622.png">
+
+<title>HP Cinemas Foods and Beverages</title>
+<style>
+body{background:linear-gradient(to right,#553311, #AA0000);}
+
+.nav{gap:40px;
+display:flex;
+display:Relative;
+font-size:25px;
+justify-content:center
+
+}
+.nav a{text-decoration:none;
+color:white;
+
+border-radius:50%;
+
+
+padding:8px;display:block;}
+.nav a:hover{background-color:lightblue;border-radius:50%}
+
+.button{justify-content:center;
+display:flex;
+gap:40px;
+}
+.button a{text-decoration:none;
+border-radius:5px;
+display:inline-block;
+height:20px;
+width:100px;
+border:2px solid pink;
+background-color:lightblue;
+text-align:center;
+}
+.button a:hover{background-color:red;}
+input[type="checkbox"]{display:none;}
+.order-popup{display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:rgba(0,0,0,0.6);
+font-size:40px;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+.order-box{
+
+text-align:center;
+color:white;
+font-family:Sans-serif;
+font-size:40px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);}
+#order1:checked~.order-popup{display:flex;}
+.order-actions {display:flex;
+justify-content:center;
+gap:100px;
+margin-top:30px;
+}
+.order-actions label,a{margin-top:4px;}
+.order-actions label:hover{cursor:pointer;}
+.order-actions a:hover{text-decoration:none;
+background-color:transparent;
+border:none;
+outline:none;
+}
+
+
+</style>
+<nav class="nav">
+  <a href="/front">Home</a>
+  <a href="/amenities">About us</a>
+  <a href="/visitus">Visit us</a>
+  <a href="/food">F&B</a>
+  <a href="/shows">Shows</a>
+</nav><br><br>
+<h1 style="text-align:center;font-size:30px;color:lightgreen;">"Savor the flavor, and enjoy the show."</h1><br><br>
+<div class="button">
+
+<a href="/">All</a>
+<a href="/desserts">Desserts</a>
+<a href="/beverages">Beverages</a>
+<a href="#Combos">Combos</a>
+</div><br><br>
+<h2 id="Combos"></h2>
+<div class="nav">
+<input type="checkbox" id="order1">
+<label for="order1">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/12.jpg">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/185.jpg">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/186.jpg">
+
+</label>
+<div class="order-popup">
+<div class="order-box">
+
+<p>Are you willing to get offer?</p><br>
+<div class="order-actions">
+<a href="/quiz">Yes, Click to play</a>
+<label for="order1">No, Close</label>
+</div>
+</div>
+</div>
+</div><br><br>
+<div class="nav">
+<input type="checkbox" id="order1">
+<label for="order1">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/173.jpg">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/174.jpg">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/175.jpg">
+
+</label>
+<div class="order-popup">
+<div class="order-box">
+
+<p>Are you willing to get offer?</p>
+<div class="order-actions">
+<a href="/quiz">Yes, click to play</a>
+<label for="order1">No, Close</label>
+</div>
+</div>
+</div>
+</div><br><br>
+<div class="nav">
+<input type="checkbox" id="order1">
+<label for="order1">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/176.jpg">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/177.jpg">
+<img src="http://www.kamalacinemas.com/News%20and%20Events/Food_and_Beverage/thumbnail/178.jpg">
+</label>
+<div class="order-popup">
+<div class="order-box">
+
+<p>Are you willing to get offer?</p>
+<div class="order-actions">
+<a href="/quiz">Yes, Click to play</a>
+<label for="order1">No, Close</label>
+</div>
+</div>
+</div>
+</div>

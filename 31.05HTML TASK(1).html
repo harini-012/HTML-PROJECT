@@ -1,0 +1,131 @@
+<!--
+2.  You’re designing the “About Us” section for a corporate website. The section should feature a 
+collapsible FAQ  and a list of team member profiles displayed as media objects. The design should 
+be clean and modern using Bootstrap utility classes and icon support. 
+Part 1: FAQ Accordion (Collapsible Component) 
+• Use Bootstrap’s collapse component. 
+• Create 3 FAQs, each with: 
+o A question as the heading 
+o An answer revealed upon clicking 
+o An icon next to the question (e.g., question mark or info icon using Font Awesome or 
+Bootstrap Icons) 
+• Use utility classes (mb-3, text-muted, fw-bold, etc.) to style the content. 
+Part 2: Team Member Media Object 
+• Display 3 team members using media object layout. 
+• Each entry must include: 
+o A circular image/avatar 
+o Name and role (name bold, role muted) 
+o A short bio paragraph 
+o Icons for LinkedIn and email (clickable) 
+• Use Bootstrap utility classes like: 
+o rounded-circle, me-3, d-flex, align-items-start, text-muted, mt-2-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+.cont{padding:20px;
+margin:20px;
+border-radius:10px;
+box-shadow:8px 8px 8px 8px rgba(0,0,0,0.1);
+color:#333}
+</style>
+<title>HP Services</title>
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeDMUVs4I1ba_AeflFefspJc2vTVUl-xYbA&s" size="16X16" type="image/x-icon">
+	<h1 class="p-5 m-5 d-flex " style="background-color:lightblue;align-items:center;gap:10px">HP Services
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeDMUVs4I1ba_AeflFefspJc2vTVUl-xYbA&s" width="200" height="200": style="border-radius:100px">
+</h1><br><br>
+<div class="cont">
+<h2>About us</h2><hr class="my-4 border-primary">
+<h4>Frequently asked questions</h4><br><br>
+<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse1" class="mb-3 text-muted fw-bold">When did the comapany start</a>
+				<span class="glyphicon glyphicon-question-sign"></span></h3>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">The company started in 1939</div>
+				
+			</div>
+		</div>
+	</div><br>
+<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse2" class="mb-3 text-muted fw-bold">What is the motto of the company</a>
+				<span class="glyphicon glyphicon-question-sign"></span></h3>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">HP's primary slogan is "Keep Reinventing</div>
+				
+			</div>
+		</div>
+	</div><br>
+<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+				<a data-toggle="collapse" href="#collapse3" class="mb-3 text-muted fw-bold">How many customers use HP</a>
+				<span class="glyphicon glyphicon-question-sign"></span></h3>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body"> More than one billion customers across 162 countries</div>
+				
+			</div>
+		</div>
+	</div><br><br>
+<h2>Meet our team</h2><hr class="my-4 border-primary">
+<div class="media">
+		<div class="media-left">
+		<img src="https://cdn.comparably.com/27244309/u/28629_exec_hp409554743584528.png"  class="media-object rounded-circle mr-4" width="100";height="100">
+		</div>
+		<div class="media-body">
+			<h3 class="media-headingfw-bold">Enrique Lores</h3>
+			<p class="text-muted">CEO</p>
+			<p>Enrique Lores is the President and CEO of HP Inc., a technology company based in Palo Alto,</p>
+             <a href="https://www.linkedin.com" target="_blank">View
+			 <i class="fab fa-linkedin"></i></a>
+			
+		</div>
+</div><br><br>
+<div class="media">
+		<div class="media-left">
+		<img src="https://cdn.comparably.com/00000000/u/28629_exec_hp217454768421479.png"  class="media-object rounded-circle mr-4" width="100";height="100">
+		</div>
+		<div class="media-body">
+			<h3 class="media-headingfw-bold">Luciana Broggi</h3>
+			<p class="text-muted">Acting Chief Commercial Officer</p>
+			<p>Luciana Broggi is the Acting Chief Commercial officer at HP, responsible for Sales and Route-to-Market on a global...</p>
+             <a href="https://www.linkedin.com" target="_blank">View
+			 <i class="fab fa-linkedin"></i></a>
+			
+		</div>
+</div><br><br>
+<div class="media">
+		<div class="media-left">
+		<img src="https://cdn.comparably.com/00000000/u/28629_exec_hp288064589808668.png"  class="media-object rounded-circle mr-4" width="100";height="100">
+		</div>
+		<div class="media-body">
+			<h3 class="media-headingfw-bold">Marie Myers</h3>
+			<p class="text-muted">Chief Financial Officer</p>
+			<p>Marie Myers is Chief Financial Officer at HP Inc. where she leads the company’s Finance organization and is responsible...</p>
+             <a href="https://www.linkedin.com" target="_blank">View
+			 <i class="fab fa-linkedin"></i></a>
+			
+		</div>
+</div><br><br>

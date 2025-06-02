@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+<title>Confirmation</title>
+
+<center>
+<h2 style="text-align:center;font-family:Exo">Check confirmation or cancellation</h2><br><br>
+<p>Date:{{theatre.date}}</p>
+<p>Movie:{{theatre.movie}}</p>
+<p>{% if info %}
+  <p style="color: red;">Booking Cancelled:{{ info }}</p>
+   {% endif %}Confirmed Seats:{{theatre.seat}}</p>
+<p>Location:{{theatre.mall}}</p>
+<p>Timing:{{theatre.time}}</p>
+<p>Seat already booked?</p>
+<a href="/shows">Click for rebooking</a>
+</center>
