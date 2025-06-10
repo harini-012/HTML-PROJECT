@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	  
+</head>
+
+<title>Zayla|Cart</title>
+<style>
+.navbar-toggle {display:block}
+@media (min-width: 768px) {.navbar-collapse.collapse{display:none !important}
+.navbar-collapse.collapse.in {display:block}}
+.navbar {background-color:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.card{margin:20px;
+padding:20px;
+border-radius:10px;
+background-color:lightgreen;
+box-shadow:8px 8px 8px rgba(0,0,0,0.1)
+}
+.badge {color: white;padding: 8px 12px;font-size: 1.2rem;
+ border-radius: 12px;
+  }
+  
+  #show-msg:checked ~ #success-msg {
+    display: block !important;
+  }
+
+</style>
+<link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrpaYNwvE0ON7k4reWYkZM73LOmua7Eghgw&s" type="image/x-icon" class="rounded-circle">
+<h1 style="text-align:center;font-size:48px;font-weight:bold;color:#333;margin-top:30px; font-family:'Segoe UI',sans-serif;">Welcome to <span style="color:#e91e63;">Cart Section</span></h1>
+<p style="text-align:center; font-size:18px; color:#666;">
+  Discover the best deals on fashion, electronics, home & more!
+</p>
+<div class="container-fluid">
+    <nav class="navbar navbar-default" style="padding:3px; margin-top:10px; font-size:20px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1" >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" >Zayla</a>
+        </div>
+		<ul class="nav navbar-nav navbar-right">
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5front.html">Home</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5front.html">Products</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5category.html">Category</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5shipping.html">Booking</a></li>
+		</ul>
+<div id="cart">
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="nav navbar-nav">
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5blog.html">Blog</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5FAQ.html">FAQ</a></li>
+          </ul>
+		  
+          
+        </div>
+      </div>
+    </nav><br><br>
+	<div class="card">
+		<h1 style="text-align:center">Your Cart   <span style="size:50px"class="badge">3</span></h1><br><br>
+		<div style="display:flex;flex-direction:column;gap:50px;">
+			<div style="display:flex;flex-direction:row; gap:50px;font-size:25px;">
+				<img src="https://m.media-amazon.com/images/I/61-EANkkcwL._AC_UL480_FMwebp_QL65_.jpg" height="200" width="200">
+					<p>Mochi<br>
+					Womens Synthetic Gold Slippers (Size (7 UK (40 EU))<br>
+					Price:1000<br>
+					<label for="promo-code">Have a promo code?</label>
+					<input type="text" id="promo-code" placeholder="Enter code">
+					<button type="button" class="btn btn-warning"  data-toggle="modal" data-target="#mod1">Apply</button>
+					<div id="mod1" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title">Coupon Details</h3>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<p>Coupon Applied with 10% offer </p>
+									
+									<p>Stay tuned <span class="glyphicon glyphicon-shopping-cart"></span></p>
+									<button type="button" class="btn btn-success" data-dismiss="modal">OK</button><br>
+									
+								</div></p>
+								</div>
+								</div>
+								</div>
+					
+					
+					  
+  </div>
+  
+</div><br><br>
+			
+			<div style="display:flex;flex-direction:row; gap:50px;font-size:25px;">
+				<img src="https://m.media-amazon.com/images/I/81yo1WPzunL._AC_UY327_FMwebp_QL65_.jpg" height="200" width="200">
+				<p>Google Tv<br>
+				FREE delivery as soon as Fri, 6 Jun, 7 am - 9 pm<br>
+				Price:12999<br>
+				<label for="promo-code">Have a promo code?</label>
+					<input type="text" id="promo-code" placeholder="Enter code">
+				<button type="button" class="btn btn-warning"  data-toggle="modal" data-target="#mod2">Apply</button>
+					<div id="mod2" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title">Coupon Details</h3>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<p>Coupon Applied with 5% offer </p>
+									
+									<p>Stay tuned <span class="glyphicon glyphicon-shopping-cart"></span></p>
+									<button type="button" class="btn btn-success" data-dismiss="modal">OK</button><br>
+									
+								</div></p>
+								</div>
+								</div>
+								</div>
+			</div><br><br>
+			<div style="display:flex;flex-direction:row; gap:50px;font-size:25px;">
+				<img src="https://m.media-amazon.com/images/I/81GaofCt8VL._AC_UL480_FMwebp_QL65_.jpg" height="200" width="200">
+				<p>Hard Disk<br>
+				FREE delivery Fri, 6 Jun on ₹499 of items fulfilled by Amazon
+Or fastest delivery Tomorrow, 5 Jun<br>
+				Price:299<br>
+				<label for="promo-code">Have a promo code?</label>
+					<input type="text" id="promo-code" placeholder="Enter code">
+				<button type="button" class="btn btn-warning"  data-toggle="modal" data-target="#mod3">Apply</button>
+					<div id="mod3" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h3 class="modal-title">Coupon Details</h3>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<p>Coupon Applied with 15% offer </p>
+									
+									<p>Stay tuned <span class="glyphicon glyphicon-shopping-cart"></span></p>
+									<button type="button" class="btn btn-success" data-dismiss="modal">OK</button><br>
+									
+								</div></p>
+								</div>
+								</div>
+								</div>
+			</div>
+</div><br><br><br><br><br>
+<footer style="color:white;padding:10px;text-align:center"class="bg-primary">
+	<p>© 2025 Zayla All Rights Reserved|Privacy Policy|Terms and Conditions|Accessibility</p><br><br>
+	<p>Follow us</p>
+	 <i class="fab fa-facebook"></i>
+ <i class="fab fa-instagram"></i>
+ <i class="fab fa-youtube"></i>
+</footer>			
+		
+</body>
+</html>
+			
+			

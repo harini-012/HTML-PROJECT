@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrpaYNwvE0ON7k4reWYkZM73LOmua7Eghgw&s" type="image/x-icon" class="rounded-circle">
+<title>Zyla|BookingForm</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<h1 style="text-align:center;font-size:48px;font-weight:bold;color:#333;margin-top:30px; font-family:'Segoe UI',sans-serif;">Make the <span style="color:#e91e63;">Product your's</span></h1><br><br>
+<div class="container">
+	<form class="form-horizontal" action="/" method="POST" enctype="multipart/form-data">
+	<div class="form-group">
+		<div class="mb-3 p-3">
+			 <label for="name" class="form-label">Name</label>
+			 <input type="text" class="form-control" name="name" id="name"required><br>
+		</div>
+		<div class="mb-3 p-3">
+			 <label for="name" class="form-label">Contact No</label>
+			 <input type="number" class="form-control" name="cno" id="cno"required><br>
+		</div>
+		<div class="mb-3 p-3">
+			 <label for="address" class="form-label">Shipping Address</label>
+			 <input type="text" class="form-control" name="add" id="add" required><br>
+		</div>
+		<div class="mb-3 p-3">
+			 <label for="Pincode" class="form-label">Pincode</label>
+			 <input type="text" class="form-control" name="pin" id="pin" required><br>
+		</div>
+		<div class="mb-3 p-3">
+			 <label for="mode" class="form-label">Payment Mode</label>
+			 <select class="form-select" name="mode" id="mode"required>
+			    <option value="">--select</option>
+				<option value="paytm">Paytm</option>
+				<option value="credit-card">Credit Card</option>
+				<option value="cash">Cash</option>
+			</select>
+        </div><br>
+        <div class="mb-3 p-3">
+			 <label for="premi" class="form-label" required>Do you need Express delivery?</label>
+             <input type="checkbox" class="form-check-input" name="premi" value="yes">
+			 <label for="yes" class="form-label">Yes</label>
+			 <input type="checkbox" class="form-check-input" name="premi" value="no">
+			 <label for="no" class="form-label">No</label>
+        </div><br><br>
+        <div class="mb-3 p-3">
+			 <label for="mode" class="form-label">Product Category</label>
+			 <select class="form-select" name="category" id="category"required>
+			    <option value="">--select</option>
+				<option value="Mobiles">Mobiles</option>
+				<option value="Telivision">Telivision</option>
+				<option value="Men's Fashion">Men's Fashion</option>
+				<option value="Women's Fashion">Women's Fashion</option>
+		
+				
+			</select>
+        </div><br>		
+		<div class="mb-3 p-3">
+			 <label for="Pincode" class="form-label">Product Name</label>
+			 <input type="text" class="form-control" name="pname" id="pname" placeholder="Type as per the category's page" required><br>
+		</div>	
+		<div class="mb-3 p-3">
+			<label for="file" class="form-label">Do you have coupon?</label>
+			<input type="file" name="coupon" id="coupon" class="form-control" placeholder="if so upload pic for discount"required>
+		</div><br>
+		<div class="mb-3 p-3">
+		
+		<h2>Terms and Conditions</h2>
+		<ul>
+		<li>The discount will be at the time of delivery.If you have coupon give cash-on delivery</li>
+		<li>The product will be returned as per the return policy</li>
+		<li>Kindly read the shipping policy</li>
+		</ul><br><br>
+		</div>
+		<div class="mb-3 p-3">
+			<div class="form-check" required>
+					<input type="checkbox" class="form-check-input" name="check" value="check" required >
+					<label for="check" class="form-label">I agree to the terms and conditions</label>
+			</div>
+		</div><br><br>
+		<button type="submit" class="btn btn-info">Place Order</button>
+
+				
+		</div>
+</body>
+</html>

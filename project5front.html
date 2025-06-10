@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	  
+</head>
+
+<title>Zayla</title>
+<style>
+.navbar-toggle {display:block}
+@media (min-width: 768px) {.navbar-collapse.collapse{display:none !important}
+.navbar-collapse.collapse.in {display:block}}
+
+#pic .item img{object-fit:cover;width:100%;height:600px;}
+.card{margin:20px;
+padding:20px;
+border-radius:10px;
+background-color:lightgreen;
+box-shadow:8px 8px 8px rgba(0,0,0,0.1)
+}
+.navbar {background-color:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+</style>
+
+<link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrpaYNwvE0ON7k4reWYkZM73LOmua7Eghgw&s" type="image/x-icon" class="rounded-circle">
+<h1 style="text-align:center;font-size:48px;font-weight:bold;color:#333;margin-top:30px; font-family:'Segoe UI',sans-serif;">Welcome to <span style="color:#e91e63;">Zayla</span></h1>
+<p style="text-align:center; font-size:18px; color:#666;">
+  Discover the best deals on fashion, electronics, home & more!
+</p>
+	<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#mod"style="position:absolute;top:30px;right:10px">Login</button>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-default" style="padding:3px; margin-top:10px; font-size:20px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1" >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" >Zayla</a>
+        </div>
+		<ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5products.html">Products</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5category.html">Category</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5shipping.html">Booking</a></li>
+				<div id="mod" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">Credentials</h3>
+							<button type="button" class="close"  arial-label="close" data-dismiss="modal">&times;</button>
+							
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+							 <div class="mb-3 p-3">
+								<label for="login" class="form-label">Login id</label>
+							    
+								<input type="text" class="form-control" name="login" id="login"required>
+							 </div>
+							 <div class="mb-3 p-3">
+								<label for="pwd" class="form-label">Password</label>
+							    
+								<input type="password" class="form-control" name="pwd" id="pwd" required>
+							 </div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-info" data-dismiss="modal" onclick="alert('Login Success')">Login</button>
+						</div>
+
+				    </div>
+				</div>
+				</div>
+				
+						
+          </ul>
+<div id="home">
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="nav navbar-nav">
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5cart.html">Cart</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5blog.html">Blog</a></li>
+            <li><a href="D:\hw documents\FRONT END\notes\templates\project5FAQ.html">FAQ</a></li>
+          </ul>
+		  
+          
+        </div>
+      </div>
+    </nav>
+  </div><br><br>
+  <div class="container-fluid">
+	<div class="carousel slide" id="pic" data-ride="carousel"data-interval="2000">
+		<ol class="carousel-indicators">
+			<li data-target="#pic" data-slide-to="0" class="active"></li>
+			<li data-target="#pic" data-slide-to="1"></li>
+			<li data-target="#pic" data-slide-to="2"></li>
+       </ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="https://www.getwelly.com/cdn/shop/files/home-hero04-desktop_3501c23a-c838-4c3a-91d8-eebedc60a1da.jpg?v=1736192682" >
+			</div>
+			<div class="item">
+				<img src="https://www.getwelly.com/cdn/shop/files/color-change-hero-desktop-3.jpg?v=1741032723">
+			</div>
+			<div class="item">
+				<img src="https://www.getwelly.com/cdn/shop/files/home-hero01-desktop_4e92bbfc-6585-426d-88a4-af81de73679c.jpg?v=1710953239" >
+			</div>
+		</div>
+		<center>
+		<a class="left carousel-control" href="#pic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<span class="sr-only"></span>
+		<a class="right carousel-control" href="#pic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		<span class="sr-only"></span>
+		</center>	
+	</div><br><br>
+	<div class="card">
+		<p style="text-align:center;font-size:40px;font-family:poppins">"Big Savings Await – Shop the Season's Best Deals!"</p>	<br>
+		<p style="text-align:center;font-size:30px;font-family:poppins">"Our Rating"<br>
+		<span class="glyphicon glyphicon-star">
+		<span class="glyphicon glyphicon-star">
+		<span class="glyphicon glyphicon-star">
+		<span class="glyphicon glyphicon-star">
+		<span class="glyphicon glyphicon-star">
+		</p><br><br>
+    </div>		
+</div><br><br><br>	
+<marquee>
+<p class="text-warning" style="font-size:40px">All type of Products is available</p>
+</marquee><br><br><br><br><br>
+<footer style="color:white;padding:10px;text-align:center"class="bg-primary">
+	<p>© 2025 Zayla All Rights Reserved|Privacy Policy|Terms and Conditions|Accessibility</p><br><br>
+	<p>Follow us</p>
+	 <i class="fab fa-facebook"></i>
+ <i class="fab fa-instagram"></i>
+ <i class="fab fa-youtube"></i>
+</footer>			
+		
+</body>
+</html>

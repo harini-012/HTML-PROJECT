@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<style>
+.card{margin:20px;
+padding:20px;
+box-shadow:4px 4px 4px rgba(0,0,0,0.1);
+border-radius:10px;
+color:#666;
+width:500px;
+height:500px;}
+</style>
+<div class="container">
+<link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrpaYNwvE0ON7k4reWYkZM73LOmua7Eghgw&s" type="image/x-icon" class="rounded-circle">
+<title>Zyla|BookingForm</title>
+<h1 style="text-align:center;font-size:48px;font-weight:bold;color:#333;margin-top:30px;font-size:25px ">Get Ready <span style="color:#e91e63;">your product will arrive soon</span></h1><br><br>
+<center>
+
+<h2>Your Orders</h2>	
+{% for data in all_orders %}
+<div class="card">
+
+<p><strong><i>Name:</i></strong>{{data.name}}</p>
+<p><strong><i>Contact Number:</i></strong>{{data.contact}}</p>
+
+<p><strong><i>Shipping Address:</i></strong>{{data.address}}</p>
+<p><strong><i>Pin Code:</i></strong>{{data.pin}}</p>
+<p><strong><i>Payment Mode:</i></strong>{{data.payment}}</p>
+<p><strong><i>Is it premium?:</i></strong>{{data.premium}}</p>
+<p><strong><i>Product Category:</i></strong>{{data.category}}</p>
+<p><strong><i>pname:</i></strong>{{data.pname}}</p>
+<p><strong><i>Coupon:</i></strong>{{data.coupon}}</p>
+</div><br><br>
+{%endfor%}
+<a href="/" class="btn btn-danger">Click for Placing another order</a><br><br>
+</div>
+<footer style="color:white;padding:10px;text-align:center"class="bg-primary">
+	<p>© 2025 Zayla All Rights Reserved|Privacy Policy|Terms and Conditions|Accessibility</p><br><br>
+	<p>Follow us</p>
+	 <i class="fab fa-facebook"></i>
+ <i class="fab fa-instagram"></i>
+ <i class="fab fa-youtube"></i>
+</footer>		
+</center>
+</body>
+</html>
+
